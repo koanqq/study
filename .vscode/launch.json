@@ -10,7 +10,8 @@
             "name": "Debug",
             "program": "${workspaceFolder}/${fileBasenameNoExtension}",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "C/C++: gcc build active file",
         }
     ]
 }
