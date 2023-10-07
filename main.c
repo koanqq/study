@@ -1,10 +1,14 @@
 #include<stdio.h>
+extern int add(int a, int b);
 
 int main() {
-    int n;
-    printf("input test1:"); 
-    scanf("%d", &n);
-    printf("Test6!n=%d, c=%c\n", n, n);
+    int a,b;
+    printf("input a:"); 
+    scanf("%d", &a);
+    printf("input b:"); 
+    scanf("%d", &b);
+    int sum = add(a,b);
+    printf("a+b=%d", sum);
     return 0;
 }
 
