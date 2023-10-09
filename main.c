@@ -1,15 +1,36 @@
-#include<stdio.h>
-extern int add(int a, int b);
+#include <stdio.h>
 
-int main() {
-    int a,b;
-    printf("input a:"); 
-    scanf("%d", &a);
-    printf("input b:"); 
-    scanf("%d", &b);
-    int sum = add(a,b);
-    printf("a+b=%d", sum);
+int main(void)
+{
+    int counter;
+    int grade;
+    int total;
+
+    float average;
+
+    total = 0;
+    counter = 0;
+    
+    printf("Enter grade, -1 to end: ");
+    scanf("%d", &grade);
+
+    while( grade != -1){
+        total = total + grade;
+        counter = counter + 1;
+
+        printf("Enter grade, -1 to end: ");
+        scanf("%d", &grade);
+    }
+
+    if("counter != 0"){
+        average = (float) total / counter;
+
+        printf("Class average is %2f\n", average);
+    }
+    else{
+        printf("No grades were entered\n");
+    }
+
     return 0;
 }
 
-// gcc main.c -o main  
