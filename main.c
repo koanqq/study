@@ -10,16 +10,17 @@ int main(void)
 
     total = 0;
     counter = 0;
+    grade = 0;
     
-    printf("Enter grade, -1 to end: ");
-    scanf("%d", &grade);
+    // printf("Enter grade, -1 to end: ");
+    // scanf("%d", &grade);
 
     while( grade != -1){
-        total = total + grade;
-        counter = counter + 1;
-
         printf("Enter grade, -1 to end: ");
         scanf("%d", &grade);
+
+        total = total + grade;
+        counter = counter + 1;
     }
 
     if("counter != 0"){
